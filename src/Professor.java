@@ -1,6 +1,8 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.StringReader;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 import org.jsoup.Jsoup;
@@ -80,6 +82,8 @@ public class Professor {
 				   alternateEmail,
 				   department;
 	
+	private Map<String, String> dataMap;
+	
 	private String phoneBookEntryURL;
 	
 	private Scanner s;
@@ -99,10 +103,18 @@ public class Professor {
 								   "Alternate Email Address", 
 								   "department"};
 	
+	
+	public Map<String,String> getMap(){
+		
+	return dataMap;	
+		
+	}
 	public Professor(String phoneBookEntryUrl) throws IOException{
 		
 		//Set the URL of the professor's phonebook page
 		this.phoneBookEntryURL = phoneBookEntryUrl;
+		
+		dataMap = new HashMap<String, String>();
 		
 		//Get the HTML document from the URL
 		
@@ -110,8 +122,6 @@ public class Professor {
 		
 		//Retrieve raw professor info from HTML
 		String rawInfo = doc.select("pre").first().text();
-		
-		System.out.print(rawInfo);
 		
 		reader = new BufferedReader(new StringReader(rawInfo));
 		
@@ -127,6 +137,7 @@ public class Professor {
 		
 	}
 	
+	
 	private void parseProfInfo(String line){
 		
 		String data;
@@ -141,53 +152,63 @@ public class Professor {
 				
 					case "alias": 
 						alias = data;
+						dataMap.put("alias", data);
 						break;
 									
 					case "name": 
 						name = data;
+						dataMap.put("name", data);
 						break;
 								 
 					case "Internet Email Address": 
 						primaryEmail = data;
+						dataMap.put("primaryEmail", data);
 						break;
 					
 					case "office_phone":
 						officePhone = data;
+						dataMap.put("officePhone", data);
 						break;
 					
 					case "fax":
 						fax = data;
+						dataMap.put("fax", data);
 						break;
 					
 					case "extension":
 						extension = data;
+						dataMap.put("extension", data);
 						break;
 					
 					case "vmail":
 						voicemail = data;
+						dataMap.put("voicemail", data);
 						break;
 						
 					case "campus":
 						campus = data;
+						dataMap.put("campus", data);
 						break;
 					
 					case "room":
 						room = data;
+						dataMap.put("room", data);
 						break;
 					
 					case "title":
 						title = data;
+						dataMap.put("title", data);
 						break;
 						
 					case "Alternate Email Address":
 						alternateEmail = data;
+						dataMap.put("alternateEmail", data);
 						break;
 						
 					case "department":
 						department = data;
+						dataMap.put("department", data);
 						break;
-						
-					default: System.out.println(data);
 						
 				}
 				
