@@ -1,10 +1,10 @@
 import java.io.IOException;
+
 import java.io.StringWriter;
 import java.util.Map;
 
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.JSONValue;
+import com.cedarsoftware.*;
+import org.json.*;
 
 public class ProfessorJSON {
 	

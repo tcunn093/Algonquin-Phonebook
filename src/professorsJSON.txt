@@ -1,0 +1,79 @@
+{
+  "professors":[
+    {
+      "alternateEmail":"Sadiq.Abbas@algonquincollege.com",
+      "extension":"5163",
+      "officePhone":"(613)727-4723",
+      "voicemail":"5163",
+      "campus":"Woodroffe Campus",
+      "name":"Abbas Sadiq",
+      "alias":"abbass",
+      "fax":"(613)727-7600",
+      "title":"Professor, Mktg. & Mgmt. Studies",
+      "department":"Marketing and Management Studies",
+      "primaryEmail":"abbass@algonquincollege.com",
+      "room":"B325d"
+    },
+    {
+      "alternateEmail":"Nadim.Abboud@algonquincollege.com",
+      "extension":"2526",
+      "officePhone":"(613)727-4723",
+      "campus":"Woodroffe Campus",
+      "name":"Abboud Nadim",
+      "alias":"abboudn",
+      "title":"Professor",
+      "department":"Marketing and Management Studies",
+      "primaryEmail":"abboudn@algonquincollege.com",
+      "room":"B225b"
+    },
+    {
+      "alternateEmail":"Sawsan.Abdul-Majid@algonquincollege.com",
+      "officePhone":"(613)727-4723",
+      "campus":"Woodroffe Campus",
+      "name":"Abdul-Majid Sawsan",
+      "alias":"abdulms",
+      "title":"Part time Professor",
+      "department":"Architecture, Civil and Building Science",
+      "primaryEmail":"abdulms@algonquincollege.com",
+      "room":"CA532"
+    },
+    {
+      "alternateEmail":"Pauline.Adams@algonquincollege.com",
+      "extension":"5757",
+      "officePhone":"(613)727-4723",
+      "voicemail":"5757",
+      "campus":"Woodroffe Campus",
+      "name":"Adams Pauline",
+      "alias":"adamsp",
+      "fax":"(613)727-7757",
+      "title":"Professor",
+      "department":"Language Institute",
+      "primaryEmail":"adamsp@algonquincollege.com",
+      "room":"B420A"
+    },
+    {
+      "alternateEmail":"Mike.Adamyk@algonquincollege.com",
+      "extension":"5235",
+      "officePhone":"(613)727-4723",
+      "voicemail":"7037",
+      "campus":"Woodroffe Campus",
+      "name":"Adamyk Mike",
+      "alias":"adamykm",
+      "fax":"(613)727-7625",
+      "title":"Professor, General Arts and Science",
+      "department":"General Arts and Science",
+      "primaryEmail":"adamykm@algonquincollege.com",
+      "room":"B124"
+    },
+    {
+      "alternateEmail":"Perihan.Ade Sanya@algonquincollege.com",
+      "officePhone":"(613)727-4723",
+      "campus":"Woodroffe Campus",
+      "name":"Ade Sanya Perihan",
+      "alias":"adesanp",
+      "title":"Professor",
+      "department":"Faculty of Health Public Safety and Community Studies",
+      "primaryEmail":"adesanp@algonquincollege.com"
+    }
+  ]
+}

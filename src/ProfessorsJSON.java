@@ -1,10 +1,12 @@
+import com.cedarsoftware.*;
+import com.cedarsoftware.util.io.JsonWriter;
+
+import org.json.*;
+
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-
-import org.json.simple.JSONObject;
-import org.json.simple.JSONValue;
 
 public class ProfessorsJSON {
 
@@ -12,7 +14,7 @@ public class ProfessorsJSON {
 	private String phoneBookJSON;
 	private ProfessorJSON p;
 
-	public ProfessorsJSON(PhoneBook phonebook) throws IOException {
+	public ProfessorsJSON(PhoneBook phonebook) throws IOException, JSONException {
 		
 		List<Professor> professors = phonebook.getProfessors();
 		
@@ -27,7 +29,9 @@ public class ProfessorsJSON {
 		
 		professorsObj.put("professors", phoneBookData);
 		
-		phoneBookJSON = JSONValue.toJSONString(professorsObj);
+		
+		
+		phoneBookJSON = JsonWriter.formatJson(professorsObj.toString(3));
 		
 	}
 	
