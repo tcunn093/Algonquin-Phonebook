@@ -58,7 +58,7 @@ public class PhoneBook {
 
 		Elements links = doc.select("a[href]");
 		
-		for (Element link: links.subList(1, links.size() - 660)){
+		for (Element link: links.subList(1, links.size())){
 			
 			addProfessor(link.attr("href"));
 			
